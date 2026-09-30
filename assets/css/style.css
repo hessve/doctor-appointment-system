@@ -1,0 +1,393 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+}
+
+* { box-sizing: border-box; }
+
+a { color: #0f766e; text-decoration: none; }
+img { max-width: 100%; }
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.topbar {
+    background: #0f172a;
+    color: #fff;
+    padding: 18px 0;
+}
+
+.topbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.topbar nav {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.topbar nav a {
+    color: #dbeafe;
+}
+
+.hero {
+    padding: 80px 0 40px;
+    background: linear-gradient(135deg, #eff6ff, #ecfeff);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+}
+
+.hero-copy h1 {
+    font-size: 3rem;
+    margin: 18px 0 12px;
+    line-height: 1.1;
+}
+
+.hero-copy p {
+    font-size: 1.05rem;
+    color: #475569;
+    max-width: 650px;
+}
+
+.hero-actions {
+    margin-top: 26px;
+    display: flex;
+    gap: 14px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn:hover { opacity: 0.95; }
+
+.btn-primary {
+    background: #2563eb;
+    color: #fff;
+}
+
+.btn-secondary {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.btn-small {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+    padding: 24px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0;
+    display: grid;
+    gap: 12px;
+}
+
+.features {
+    padding: 30px 0 80px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.feature-item h3 {
+    margin-top: 0;
+}
+
+.page-shell {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 0 16px;
+}
+
+.auth-card {
+    padding: 32px;
+}
+
+.auth-card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    font-size: 1rem;
+    background: #fff;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid rgba(37, 99, 235, 0.2);
+    border-color: #2563eb;
+}
+
+.switch-link {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.alert {
+    padding: 12px 14px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.alert-danger {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+.alert-success {
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.dashboard-layout {
+    max-width: 1200px;
+    margin: 32px auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 24px;
+}
+
+.sidebar {
+    align-self: start;
+    position: sticky;
+    top: 20px;
+}
+
+.nav-links {
+    display: grid;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: #0f172a;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.content-area {
+    display: grid;
+    gap: 24px;
+}
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel-header h2 {
+    margin: 8px 0 0;
+}
+
+.role-badge {
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.stat-label {
+    color: #64748b;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.stat-box strong {
+    font-size: 2rem;
+}
+
+.section-block h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.doctor-list,
+.appointments-list,
+.schedule-list {
+    display: grid;
+    gap: 12px;
+}
+
+.doctor-item,
+.appointment-item,
+.schedule-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.muted {
+    color: #64748b;
+}
+
+.status-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 8px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.status-pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.status-confirmed {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-cancelled {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.booking-form,
+.schedule-form {
+    display: grid;
+    gap: 12px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+th, td {
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+    padding: 12px 10px;
+}
+
+th {
+    background: #f8fafc;
+}
+
+@media (max-width: 900px) {
+    .dashboard-layout,
+    .hero-content,
+    .cards-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+}
